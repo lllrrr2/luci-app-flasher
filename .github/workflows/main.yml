@@ -1,4 +1,4 @@
-name: r2s_luci-app-r2sflasher
+name: luci-app-r2sflasher
 
 on:
   push:
@@ -69,7 +69,7 @@ jobs:
       - name: Add Luci-app-r2sflasher
         run: |
           git clone -b master --single-branch https://github.com/wrtpi/luci-app-flasher.git
-          mv luci-app-r2sflasher friendlywrt-rk3328/friendlywrt/package
+          mv luci-app-flasher friendlywrt-rk3328/friendlywrt/package
 
       - name: Update Feeds
         run: |
